@@ -363,6 +363,10 @@ footer .legal{justify-content:center;max-width:620px}
 @keyframes cline{to{width:120px}}
 @keyframes shine{to{background-position:-220% 0}}
 @keyframes spin{to{transform:translateY(-50%) rotate(360deg)}}
+@keyframes spinc{from{transform:translate(-50%,-50%) rotate(0)}to{transform:translate(-50%,-50%) rotate(360deg)}}
+@media(max-width:899px){
+  .talk .seal{left:50%;right:auto;top:50%;width:min(300px,82vw);transform:translate(-50%,-50%);opacity:.07;animation:spinc 120s linear infinite}
+}
 @keyframes up{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
 @keyframes settle{from{transform:scale(1.03);opacity:0}to{transform:none;opacity:1}}
 @keyframes pan{to{transform:translateX(-50%)}}
